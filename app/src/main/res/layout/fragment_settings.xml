@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_dark_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_3x"
+        android:layout_marginTop="@dimen/margin_3x"
+        android:text="@string/dark_mode"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchDarkMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/margin_3x"
+        android:layout_marginTop="@dimen/margin_3x"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_dark_mode" />
+
+    <TextView
+        android:id="@+id/tv_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_3x"
+        android:layout_marginTop="@dimen/margin_3x"
+        android:text="@string/language"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/switchDarkMode" />
+
+    <TextView
+        android:id="@+id/tv_language_ro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_3x"
+        android:layout_marginTop="@dimen/margin_3x"
+        android:text="en"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/switchButtonLanguage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_language" />
+
+    <androidx.appcompat.widget.SwitchCompat
+
+        android:id="@+id/switchButtonLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/margin_3x"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@id/tv_language_eng"
+        app:layout_constraintStart_toEndOf="@+id/tv_language_ro"
+        app:layout_constraintTop_toBottomOf="@id/tv_language" />
+
+    <TextView
+        android:id="@+id/tv_language_eng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_3x"
+        android:layout_marginTop="@dimen/margin_3x"
+        android:text="ro"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/switchButtonLanguage"
+        app:layout_constraintTop_toBottomOf="@id/tv_language" />
+</androidx.constraintlayout.widget.ConstraintLayout>

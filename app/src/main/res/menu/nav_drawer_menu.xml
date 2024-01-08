@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/profileFragment"
+        android:title="@string/profile" />
+    <item
+        android:id="@+id/aboutUsFragment"
+        android:title="@string/aboutus" />
+    <item
+        android:id="@+id/contactUsFragment"
+        android:title="@string/contactus" />
+    <item
+        android:id="@+id/shareFragment"
+        android:title="@string/share" />
+    <item
+        android:id="@+id/settingsFragment"
+        android:title="@string/settings" />
+</menu>

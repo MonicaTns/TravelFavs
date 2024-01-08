@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">TravelFavs</string>
+    <string name="edit_text_dest_name_hint">Destination Name</string>
+    <string name="tv_title_create_memory">Create a new memory</string>
+    <string name="tv_time_period_travel">Choose the period of time for your travel</string>
+    <string name="actv_travel_type">Travel type</string>
+    <string name="tied_travel_notes">Travel notes</string>
+    <string name="button_add_memory">Add Memory</string>
+    <string name="tv_date_placeholder">day/month/year</string>
+    <string name="tv_destination">Destination:</string>
+    <string name="tv_date">Date:</string>
+    <string name="about_us_text">   Welcome to TravelFavs, your go-to app for organizing and preserving your travel memories. Our app, My Travel Journal, is designed to make your travel experiences unforgettable.Travelfavs allows you to create, view, and edit your travel memories with ease. Whether you\'re planning a new adventure or reliving past journeys, TravelFavs is here for you. Explore the world, capture the moments, and let TravelFavs be your companion in the journey of a lifetime. Cheers to new adventures!</string>
+    <string name="contact_us">Have questions, feedback, or just want to say hello? Reach out to us and we\'ll get back to you as soon as possible.</string>
+    <string name="contact_us_title">My Travel Journal</string>
+    <string name="share_memory">Share your travel memories with friends!</string>
+    <string name="share">Share</string>
+    <string name="dark_mode">Dark mode</string>
+    <string name="language">Language</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="aboutus">About us</string>
+    <string name="contactus">Contact us</string>
+    <string name="settings">Settings</string>
+</resources>

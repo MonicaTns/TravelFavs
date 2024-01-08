@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_dest_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_3x"
+            android:hint="@string/edit_text_dest_name_hint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.8" />
+
+        <TextView
+            android:id="@+id/tv_date_picker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_3x"
+            android:text="@string/tv_time_period_travel"
+            android:textSize="@dimen/text_2x"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tiet_dest_name"
+            app:layout_constraintWidth_percent="0.8" />
+
+        <TextView
+            android:id="@+id/tv_date_picker_result"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_3x"
+            android:text="@string/tv_date_placeholder"
+            android:textSize="@dimen/text_2x"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_date_picker"
+            app:layout_constraintWidth_percent="0.8" />
+
+
+        <DatePicker
+            android:id="@+id/date_picker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_3x"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_date_picker_result"
+            app:layout_constraintWidth_percent="0.8" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dropdown"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_3x"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/date_picker"
+            app:layout_constraintWidth_percent="0.6">
+
+            <AutoCompleteTextView
+                android:id="@+id/autocomplete_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/actv_travel_type"
+                android:inputType="none" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/slider"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_3x"
+            android:stepSize="10.0"
+            android:valueFrom="0.0"
+            android:valueTo="40.0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dropdown"
+            app:layout_constraintWidth_percent="0.8"
+            app:values="@array/slider_values" />
+
+        <TextView
+            android:id="@+id/tv_slider"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/slider"
+            app:layout_constraintWidth_percent="0.8" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/travel_notes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_3x"
+            android:hint="@string/tied_travel_notes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_slider"
+            app:layout_constraintWidth_percent="0.8" />
+
+        <Button
+            android:id="@+id/add_memory_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_3x"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/button_add_memory"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_3x"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/travel_notes"
+            app:layout_constraintWidth_percent="0.8" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

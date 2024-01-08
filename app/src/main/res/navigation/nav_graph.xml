@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.tanase.travelfavs.presentation.homeFeature.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_addMemoryFragment"
+            app:destination="@id/addMemoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.tanase.travelfavs.presentation.profileFeature.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.tanase.travelfavs.presentation.aboutFeature.AboutUsFragment"
+        android:label="@string/aboutus"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/contactUsFragment"
+        android:name="com.tanase.travelfavs.presentation.contactFeature.ContactUsFragment"
+        android:label="@string/contactus"
+        tools:layout="@layout/fragment_contact_us" />
+    <fragment
+        android:id="@+id/shareFragment"
+        android:name="com.tanase.travelfavs.presentation.shareFeature.ShareFragment"
+        android:label="@string/share"
+        tools:layout="@layout/fragment_share" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.tanase.travelfavs.presentation.settingsFeature.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/addMemoryFragment"
+        android:name="com.tanase.travelfavs.presentation.homeFeature.AddMemoryFragment"
+        android:label="Add Memory"
+        tools:layout="@layout/fragment_add_memory" />
+
+
+</navigation>

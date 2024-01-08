@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">TravelFavs</string>
+    <string name="edit_text_dest_name_hint">Numele destinatiei</string>
+    <string name="tv_title_create_memory">Creeaza o noua amintire</string>
+    <string name="tv_time_period_travel">Alege perioada calatoriei</string>
+    <string name="actv_travel_type">Tipul calatoriei</string>
+    <string name="tied_travel_notes">Notite</string>
+    <string name="button_add_memory">Adauga amintire</string>
+    <string name="tv_date_placeholder">zi/luna/an</string>
+    <string name="tv_destination">Destinatie:</string>
+    <string name="tv_date">Data:</string>
+    <string name="about_us_text">   Bine ați venit la TravelFavs, aplicația ta de încredere pentru organizarea și păstrarea amintirilor tale de călătorie. Aplicația noastră, My Travel Journal, este concepută pentru a face experiențele tale de călătorie de neuitat. TravelFavs îți permite să creezi, să vezi și să editezi cu ușurință amintirile tale de călătorie. Fie că planifici o nouă aventură sau retrăiești călătoriile trecute, TravelFavs este aici pentru tine. Explorează lumea, surprinde momentele și lasă TravelFavs să fie tovarășul tău în călătoria vieții. Noroc la noi aventuri!</string>
+    <string name="contact_us">Ai întrebări, feedback sau vrei doar să ne saluți? Apelează la noi și îți vom răspunde în cel mai scurt timp posibil.</string>
+    <string name="contact_us_title">Jurnal de caltorie</string>
+    <string name="share_memory">Impartaseste-ti amintirile cu prietenii!</string>
+    <string name="share">Distribuie</string>
+    <string name="dark_mode">Mod de noapte</string>
+    <string name="language">Limba</string>
+    <string name="home">Acasa</string>
+    <string name="profile">Profil</string>
+    <string name="aboutus">Despre noi</string>
+    <string name="contactus">Contact</string>
+    <string name="settings">Setari</string>
+    <string name="addMemory">Adauga amintire</string>
+
+</resources>
