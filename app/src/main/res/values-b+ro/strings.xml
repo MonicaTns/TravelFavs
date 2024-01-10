@@ -22,5 +22,24 @@
     <string name="contactus">Contact</string>
     <string name="settings">Setari</string>
     <string name="addMemory">Adauga amintire</string>
+    <string name="about_us">Despre noi</string>
+    <string name="logout">Delogare</string>
+    <string name="ro">ro</string>
+    <string name="en">en</string>
+    <string name="email_template">Buna,
+
+As dori sa remrc urmatorele:
+</string>
+    <string-array name="travel_types">
+        <item>Odihna</item>
+        <item>Business</item>
+        <item>Familie</item>
+    </string-array>
+
+    <string name="mood_sad">Trist</string>
+    <string name="mood_upset">Suparat</string>
+    <string name="mood_happy">Fericit</string>
+    <string name="mood_excited">Incantat</string>
+    <string name="mood_very_excited">Extaziat</string>
 
 </resources>

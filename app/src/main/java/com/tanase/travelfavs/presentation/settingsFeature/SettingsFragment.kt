@@ -39,14 +39,12 @@ class SettingsFragment : Fragment() {
         }
         val switchButton = binding.switchButtonLanguage
 
-        // Observe the switch state LiveData
         viewModel.switchStateLiveData.observe(viewLifecycleOwner) { isChecked ->
             switchButton.isChecked = isChecked
             setLocale(if (isChecked) "ro" else "en")
         }
 
         switchButton.setOnCheckedChangeListener { _, isChecked ->
-            // Save the state using the ViewModel
             viewModel.saveSwitchState(isChecked)
 
             if (isChecked) {
@@ -65,7 +63,6 @@ class SettingsFragment : Fragment() {
         val config = Configuration()
         config.locale = locale
 
-        // Use baseContext here
         requireActivity().resources.updateConfiguration(
             config,
             requireActivity().resources.displayMetrics

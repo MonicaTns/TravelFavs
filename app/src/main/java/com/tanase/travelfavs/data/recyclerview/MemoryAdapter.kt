@@ -10,7 +10,6 @@ class MemoryAdapter(private var memorylist: List<Memory>) :
     RecyclerView.Adapter<MemoryAdapter.MemoryHolder>() {
     var onDeleteMemoryButtonClick: ((Memory) -> Unit)? = null
     var onEditMemoryButtonClick: ((Int) -> Unit)? = null
-    var onShareButtonClick:((Memory)->Unit)?=null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MemoryHolder {
         val binding = ItemMemoryBinding
@@ -51,5 +50,4 @@ class MemoryAdapter(private var memorylist: List<Memory>) :
             }
         }
     }
-
 }

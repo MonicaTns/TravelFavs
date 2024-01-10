@@ -37,12 +37,12 @@
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.tanase.travelfavs.presentation.settingsFeature.SettingsFragment"
-        android:label="Settings"
+        android:label="@string/settings"
         tools:layout="@layout/fragment_settings" />
     <fragment
         android:id="@+id/addMemoryFragment"
         android:name="com.tanase.travelfavs.presentation.homeFeature.AddMemoryFragment"
-        android:label="Add Memory"
+        android:label="@string/addMemory"
         tools:layout="@layout/fragment_add_memory" />
 
 

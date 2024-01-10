@@ -21,4 +21,23 @@
     <string name="aboutus">About us</string>
     <string name="contactus">Contact us</string>
     <string name="settings">Settings</string>
+    <string name="addMemory">Add memory</string>
+    <string name="about_us">About Us</string>
+    <string name="logout">LOGOUT</string>
+    <string name="ro">ro</string>
+    <string name="en">en</string>
+    <string name="email_template">Hello,
+
+I would like to provide the following feedback:
+</string>
+    <string-array name="travel_types">
+        <item>Leisure</item>
+        <item>Business</item>
+        <item>Family</item>
+    </string-array>
+    <string name="mood_sad">Sad</string>
+    <string name="mood_upset">Upset</string>
+    <string name="mood_happy">Happy</string>
+    <string name="mood_excited">Excited</string>
+    <string name="mood_very_excited">Very Excited</string>
 </resources>

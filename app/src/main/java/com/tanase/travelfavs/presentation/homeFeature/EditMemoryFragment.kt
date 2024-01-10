@@ -76,19 +76,19 @@ class EditMemoryFragment : Fragment() {
     }
 
     private fun dropdownTravelTypeSetup() {
-        val items = listOf("Leisure", "Business", "Family")
+        val items = resources.getStringArray(R.array.travel_types)
         val adapter = ArrayAdapter(requireActivity(), R.layout.list_item, items)
         binding.autocompleteTv.setAdapter(adapter)
     }
 
     private fun sliderMoodSetup() {
         binding.slider.addOnChangeListener { _, value, _ ->
-            binding.tvSlider.text = when (value.toString()) {
-                "0.0" -> "sad"
-                "10.0" -> "upset"
-                "20.0" -> "happy"
-                "30.0" -> "excited"
-                "40.0" -> "very excited"
+            binding.tvSlider.text = when (value.toInt()) {
+                0 -> getString(R.string.mood_sad)
+                10 -> getString(R.string.mood_upset)
+                20 -> getString(R.string.mood_happy)
+                30 -> getString(R.string.mood_excited)
+                40 -> getString(R.string.mood_very_excited)
                 else -> ""
             }
         }
